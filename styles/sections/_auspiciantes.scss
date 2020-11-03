@@ -1,0 +1,29 @@
+.auspiciante {
+    display: inline-flex;
+    width: 40%;
+    margin: 3rem 5%;
+    position: relative;
+    border-radius: 25px;
+    transition: all 0.4s;
+    img {
+        width: 70%;
+    }
+    p {
+        margin: 0 2rem;
+    }
+    &:hover {
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.63);
+    }
+}
+.auspiciantes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.auspiciantes {
+    margin-bottom: 5rem;
+    h2 {
+        padding: 3rem 0 0 0;
+    }
+}

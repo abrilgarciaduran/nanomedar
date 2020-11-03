@@ -1,0 +1,16 @@
+.organizacion-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    div {
+        margin-bottom: 3rem;
+    }
+    p {
+        text-align: justify;
+        margin-bottom: 3.5rem;
+    }
+    li {
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    margin-top: -70px;
+    background-color: $dark-blue;
+    color: white;
+    z-index: 2;
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+    .desplegable {
+        @include hidden;
+    }
+    img {
+        height: 70px;
+        background-color: white;
+        padding: 0 20px;
+    }
+}
+.links {
+    display: flex;
+    li {
+        list-style: none;
+        font-size: 2rem;
+        padding: 1.8rem;
+        a {
+            color: $white;
+            transition: all 0.2s;
+            &:hover {
+                color: $alternate-light-blue;
+            }
+        }
+    }
+}
+
+//Mobile 

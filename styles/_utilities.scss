@@ -1,0 +1,172 @@
+////////////////////////////////Normalizar
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    font-size: 8px;
+}
+
+////////////////////////////////Mixins
+@mixin hidden {
+    display: none;
+}
+@mixin alineacionVertical {
+    display: flex;
+    align-items: center;
+}
+@mixin alineacionHorizontal {
+    display: flex;
+    justify-content: center;
+}
+
+////////////////////////////////Variables
+$dark-blue: #004aad;
+$blue: #6181c4;
+$white-blue: #afbedb;
+$alternate-light-blue: #6fbcbf;
+$alternate-pink: #c995b2;
+$white: #FFF;
+
+
+////////////////////////////////Quarks
+h1 {
+    font-size: 4rem;
+    padding: 2rem 3rem;
+}
+h2 {
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+h3 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+a {
+    font-style: normal;
+}
+p {
+    font-size: 2rem;
+}
+main {
+    margin-top: 8.75rem;
+}
+body, header {
+    max-width: 1600px;
+    margin: auto;
+}
+
+////////////////////////////////Classes
+.side-margins {
+    padding: 0 15rem;
+}
+.bottom-margins {
+    padding-bottom: 7rem;
+}
+.top-margins {
+    margin-top: 7rem;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    * {
+        display: inline-block;
+    }
+}
+.banner {
+    width: 100%;
+}
+.live {
+    // @include hidden;
+    img {
+        width: 100px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .flex-column {
+        display: flex;
+        transition: all 0.4s;
+        &:hover {
+            box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.63);
+        }
+    }
+    .blue-button {
+        background-color: $blue;
+    }
+}
+.white {
+    color: $white;
+}
+.img-icon {
+    width: 4rem;
+    margin: 1rem;
+}
+.blue-button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    background-color: $dark-blue;
+    color: $white;
+    border-radius: 25px;
+    margin: 1rem;
+    transition: all 0.4s;
+    &:hover {
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.63);
+    }
+}
+.text-content {
+    margin: 7rem 0;
+    h3 {
+        color: $dark-blue;
+        margin: 2rem 0 0 0;
+    }
+    p {
+        margin: 0.8rem 0;
+    }
+    ul {
+        li {
+        margin-left: 3rem;
+        font-size: 2rem;
+        }
+    }
+    h2 {
+        background-color: $alternate-light-blue;
+        color: #FFF;
+        padding: 1rem 4rem;
+        width: 400px;
+    }
+    h4 {
+        margin: 2rem 0 0 0;
+        font-size: 2.2rem;
+        color: $dark-blue;
+    }
+}
+.bold {
+    font-weight: 500;
+}
+.blue {
+    color: $blue;
+}
+
+////////////////////////////////Media Queries
+@media (min-width: 768px) {
+    .banner-mobile {
+        @include hidden;
+    }
+}
+@media (max-width: 768px) {
+    .banner {
+        @include hidden;
+    }
+    .side-margins {
+        padding: 0 4rem;
+    }
+}

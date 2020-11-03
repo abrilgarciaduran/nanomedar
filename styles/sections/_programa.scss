@@ -1,0 +1,47 @@
+.submenu {
+    display: flex;
+}
+.items-submenu {
+    height: 10rem;
+    flex: 1;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: $dark-blue;
+    border: 3px solid $white;
+    transition: all 0.4s;
+    &:hover {
+        background-color: $alternate-light-blue;
+    }
+    a {
+        color: $white;
+        padding: 3rem 6rem;
+    }
+}
+.background-light-blue {
+    background-color: $alternate-light-blue;
+}
+.conferencista-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.invitado-card {
+    position: relative;
+    border-radius: 25px;
+    background-color: $alternate-light-blue;
+    width: 400px;
+    margin: 2rem;
+    img {
+        margin: 3%;
+        width: 94%;
+    }
+    p {
+        font-size: 1.5rem;
+        margin: 2rem 2rem;
+    }
+    h4 {
+        font-size: 2rem;
+        margin: 0rem 2rem;
+    }
+
+}

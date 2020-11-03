@@ -1,0 +1,12 @@
+#inscripcion-section {
+    background-color: $alternate-light-blue;
+}
+.button-container {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .blue-button {
+        padding: 3rem;
+    }
+}
