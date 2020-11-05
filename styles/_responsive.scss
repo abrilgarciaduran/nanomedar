@@ -1,0 +1,27 @@
+////////////////////////////////Media Queries
+@media (min-width: 768px) {
+    .banner-mobile {
+        @include hidden;
+    }
+    .open-close-menu {
+        @include hidden;
+    }
+}
+@media (max-width: 768px) {
+    .banner {
+        @include hidden;
+    }
+    .banner-mobile {
+        display: block;
+    }
+    .side-margins {
+        padding: 0 4rem;
+    }
+    .text-content {
+        h2 {
+            width: 240px;
+            font-size: 3rem;
+            margin: 1rem 2rem;
+        }
+    }
+}

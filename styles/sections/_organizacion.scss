@@ -1,7 +1,8 @@
 .organizacion-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center; 
+    text-align: center;
     div {
         margin-bottom: 3rem;
     }
@@ -12,5 +13,23 @@
     li {
         margin-left: 3rem;
         font-size: 2rem;
+        list-style: none;
+    }
+}
+.cv-conicet {
+    padding: 1rem 2rem;
+    margin: 1rem 0 2rem 0;
+    background-color: $alternate-light-blue;
+    font-size: 1.5rem;
+    color: $white;
+    border-radius: 15px;
+    transition: all 0.4s;
+    &:hover {
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.63);
+    }
+}   
+@media (max-width: 768px) {
+    .logo-horizontal {
+        width: 250px;
     }
 }

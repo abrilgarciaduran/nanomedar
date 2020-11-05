@@ -14,7 +14,9 @@
 
 h1 {
   font-size: 4rem;
-  padding: 2rem 3rem; }
+  padding: 2rem 3rem;
+  text-align: center;
+  margin-top: 3rem; }
 
 h2 {
   font-size: 4rem;
@@ -24,6 +26,15 @@ h3 {
   font-size: 3rem;
   padding: 1rem; }
 
+h4 {
+  margin: 2rem 0 0 0;
+  font-size: 2.2rem;
+  color: #004aad; }
+
+h5 {
+  font-size: 2rem;
+  margin: 3rem 0 2rem 0; }
+
 a {
   font-style: normal; }
 
@@ -31,7 +42,7 @@ p {
   font-size: 2rem; }
 
 main {
-  margin-top: 8.75rem; }
+  margin-top: 10rem; }
 
 body, header {
   max-width: 1600px;
@@ -44,7 +55,14 @@ body, header {
   padding-bottom: 7rem; }
 
 .top-margins {
+  margin-top: 2rem; }
+
+.top-margins {
   margin-top: 7rem; }
+
+.vh100 {
+  height: 100vh;
+  background-color: #004aad; }
 
 .flex-column {
   display: flex;
@@ -56,10 +74,14 @@ body, header {
 .banner {
   width: 100%; }
 
+.banner-mobile {
+  margin: auto; }
+
 .live img {
   width: 100px; }
 .live h2 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-align: center; }
 .live .flex-column {
   display: flex;
   transition: all 0.4s; }
@@ -68,12 +90,29 @@ body, header {
 .live .blue-button {
   background-color: #6181c4; }
 
+.float-left {
+  display: block;
+  height: 70px;
+  background-color: white;
+  padding: 0 20px;
+  justify-self: flex-start; }
+
+.hidden {
+  display: none; }
+
 .white {
   color: #FFF; }
+
+.dark-blue {
+  color: #004aad; }
 
 .img-icon {
   width: 4rem;
   margin: 1rem; }
+
+.img-medium {
+  width: 20rem;
+  margin: 5rem; }
 
 .blue-button {
   font-size: 1.5rem;
@@ -100,46 +139,44 @@ body, header {
     background-color: #6fbcbf;
     color: #FFF;
     padding: 1rem 4rem;
-    width: 400px; }
-  .text-content h4 {
-    margin: 2rem 0 0 0;
-    font-size: 2.2rem;
-    color: #004aad; }
+    width: 400px;
+    margin: 3rem 0 2rem 0; }
 
 .bold {
   font-weight: 500; }
 
+.bold600 {
+  font-weight: 600; }
+
 .blue {
   color: #6181c4; }
 
-@media (min-width: 768px) {
-  .banner-mobile {
-    display: none; } }
-@media (max-width: 768px) {
-  .banner {
-    display: none; }
+.open-close-menu {
+  margin: 0 3rem;
+  width: 4rem; }
 
-  .side-margins {
-    padding: 0 4rem; } }
+.live {
+  display: none; }
+
+.cronograma-section {
+  display: none; }
+
 header {
   position: fixed;
   width: 100%;
-  height: 70px;
-  margin-top: -70px;
+  height: 80px;
+  margin-top: -10rem;
   background-color: #004aad;
   color: white;
-  z-index: 2; }
+  z-index: 2;
+  transition: all 0.6s; }
   header nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 100%; }
   header .desplegable {
     display: none; }
-  header img {
-    height: 70px;
-    background-color: white;
-    padding: 0 20px; }
 
 .links {
   display: flex; }
@@ -153,6 +190,13 @@ header {
       .links li a:hover {
         color: #6fbcbf; }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  header img {
+    padding: 0 1rem; }
+
+  .links li {
+    font-size: 1.5rem;
+    padding: 1.2rem; } }
 footer {
   background-color: #004aad;
   position: relative; }
@@ -185,8 +229,8 @@ footer {
       display: inline-block; } }
 .auspiciante {
   display: inline-flex;
-  width: 40%;
-  margin: 3rem 5%;
+  width: 380px;
+  margin: 3rem 0;
   position: relative;
   border-radius: 25px;
   transition: all 0.4s; }
@@ -263,7 +307,8 @@ footer {
 .organizacion-section {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
   .organizacion-section div {
     margin-bottom: 3rem; }
   .organizacion-section p {
@@ -271,6 +316,42 @@ footer {
     margin-bottom: 3.5rem; }
   .organizacion-section li {
     margin-left: 3rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    list-style: none; }
+
+.cv-conicet {
+  padding: 1rem 2rem;
+  margin: 1rem 0 2rem 0;
+  background-color: #6fbcbf;
+  font-size: 1.5rem;
+  color: #FFF;
+  border-radius: 15px;
+  transition: all 0.4s; }
+  .cv-conicet:hover {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.63); }
+
+@media (max-width: 768px) {
+  .logo-horizontal {
+    width: 250px; } }
+@media (min-width: 768px) {
+  .banner-mobile {
+    display: none; }
+
+  .open-close-menu {
+    display: none; } }
+@media (max-width: 768px) {
+  .banner {
+    display: none; }
+
+  .banner-mobile {
+    display: block; }
+
+  .side-margins {
+    padding: 0 4rem; }
+
+  .text-content h2 {
+    width: 240px;
+    font-size: 3rem;
+    margin: 1rem 2rem; } }
 
 /*# sourceMappingURL=styles.css.map */

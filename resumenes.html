@@ -15,6 +15,9 @@
 <body>
     <header>
         <nav>
+            <div>
+                <img class="float-left" id="img-logo-main" src="./assets/logo.png" alt="Nanomedar">
+            </div>
             <ul class="links">
                 <li class="link" id="home">
                     <a href="./index.html">INICIO</a>
@@ -28,7 +31,7 @@
                     </div>
                 </li>
                 <li class="link" id="programa">
-                    <a href="./programa/cronograma.html">PROGRAMA</a>
+                    <a href="./programa/presentacion-trabajos.html">PROGRAMA</a>
                     <div class="desplegable" id="desplegablePrograma">
                         <p>CRONOGRAMA</p>
                         <p>CONFERENCIAS</p>
@@ -40,19 +43,20 @@
                     <a href="./inscripcion.html">INSCRIPCIÓN</a>
                 </li>
                 <li class="link" id="envio-de-resumenes">
-                    <a href="./resumenes.html">RESUMENES</a>
+                    <a href="./resumenes.html">RESÚMENES</a>
                 </li>
                 <li class="link" id="contacto">
-                    <a href="#contacto-section">CONTACTO</a>
+                    <a href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="flex-column">
-            <img src="./assets/banner-resumenes.png" alt="Envío de Resúmenes. Deadline 7 de noviembre." class="banner">
-            <img src="" alt="" class="banner-mobile">
-            <a href="#resumenes-envio" class="blue-button">ENVIAR RESUMEN</a>
+            <img src="./assets/banner-resumenes.png" alt="Envío de Resúmenes. Deadline 14 de noviembre." class="banner">
+            <img src="./assets/banner-resumenes-mobile.png" alt="Envío de Resúmenes. Deadline 14 de noviembre."
+                class="banner-mobile">
+            <a href="#resumenes-envio" class="blue-button">CONOCE MÁS</a>
         </section>
         <section id="resumenes-info" class="text-content side-margins">
             <h2>Áreas temáticas para la presentación de trabajos</h2>
@@ -69,19 +73,22 @@
         </section>
         <section id="resumenes-envio" class="text-content side-margins">
             <h2>Información para el envío de resumenes</h2>
-            <p>Por la situación extraordinaria que atravesamos, este año se aceptarán trabajos en áreas temáticas que
+            <p class="top-margins">Por la situación extraordinaria que atravesamos, este año se aceptarán trabajos en
+                áreas temáticas que
                 contemplen no solo resultados sobre desarrollos experimentales, sino también sobre exposición de planes
                 de tesis doctorales o trabajos de revisión originales. Los trabajos seleccionados serán presentados como
                 vídeos flash (de 5 minutos) y al final de la sesión habrá una ronda de preguntas de asistentes y
                 jurados.</p>
             <p>Los trabajos luego serán publicados en el Libro de Resúmenes de la Conferencia.</p>
-            <p>Envío de resúmenes a nanomedar2020@gmail.com. La fecha límite para el envío de resúmenes es el viernes 14
-                de noviembre.</p>
+            <p><span class="bold600">Envío de resúmenes a nanomedar2020@gmail.com . La fecha límite para el envío
+                    de
+                    resúmenes es el viernes 14
+                    de noviembre.</span></p>
             <h3>Formato de resúmenes</h3>
             <ul>
                 <li>Área temática</li>
                 <li>Título</li>
-                <li>Autores y afilicación</li>
+                <li>Autores y afiliación</li>
                 <li>Resumen de no más de 200 palabras</li>
                 <li>Idioma Inglés</li>
             </ul>
@@ -124,4 +131,5 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
