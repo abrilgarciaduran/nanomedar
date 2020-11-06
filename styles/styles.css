@@ -45,6 +45,7 @@ main {
   margin-top: 10rem; }
 
 body, header {
+  width: 100vw;
   max-width: 1600px;
   margin: auto; }
 
@@ -167,7 +168,7 @@ body, header {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   margin-top: -10rem;
   background-color: #004aad;
@@ -181,10 +182,11 @@ header {
     height: 100%; }
   header .desplegable {
     position: absolute;
-    margin-top: 2rem;
-    background-color: #FFF; }
+    margin-top: 1.7rem;
+    background-color: #004aad;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.63); }
     header .desplegable a {
-      color: #004aad;
+      color: #FFF;
       padding: 1rem 2rem;
       transition: all 0.4s;
       display: block; }
@@ -346,9 +348,6 @@ footer {
   .logo-horizontal {
     width: 250px; } }
 @media (max-width: 768px) {
-  header {
-    margin-top: 0; }
-
   .banner {
     display: none; }
 
@@ -364,11 +363,21 @@ footer {
     margin: 1rem 2rem; }
 
   .links {
+    width: 100vw;
+    transform: translateY(21rem);
     background-color: #004aad;
     position: absolute;
     flex-direction: column;
     width: 100%;
-    align-items: center; } }
+    align-items: center;
+    display: none;
+    transition: all 0.4s; }
+
+  .submenu {
+    flex-wrap: wrap; }
+
+  .items-submenu {
+    width: 35%; } }
 @media (min-width: 768px) and (max-width: 1024px) {
   header img {
     padding: 0 1rem; }

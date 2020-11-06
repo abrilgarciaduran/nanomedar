@@ -1,8 +1,5 @@
 ////////////////////////////////Mobile
 @media (max-width: 768px) {
-    header {
-        margin-top: 0;
-    }
     .banner {
         @include hidden;
     }
@@ -20,11 +17,21 @@
         }
     }
     .links {
+        width: 100vw;
+        transform: translateY(21rem);
         background-color: $dark-blue;
         position: absolute;
         flex-direction: column;
         width: 100%;
         align-items: center;
+        display: none;
+        transition: all 0.4s;
+    }
+    .submenu {
+        flex-wrap: wrap;
+    }
+    .items-submenu {
+        width: 35%;
     }
 }
 

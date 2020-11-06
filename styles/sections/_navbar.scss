@@ -1,6 +1,6 @@
 header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     margin-top: -10rem;
     background-color: $dark-blue;
@@ -15,10 +15,11 @@ header {
     }
     .desplegable {
         position: absolute;
-        margin-top: 2rem;
-        background-color: $white;
+        margin-top: 1.7rem;
+        background-color: $dark-blue;
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.63); 
         a {
-            color: $dark-blue;
+            color: $white;
             padding: 1rem 2rem;
             transition: all 0.4s;
             display: block;
