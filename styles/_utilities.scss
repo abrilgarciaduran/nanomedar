@@ -135,6 +135,9 @@ body, header {
 .hidden {
     @include hidden;
 }
+.display {
+    display: block;
+}
 .white {
     color: $white;
 }
@@ -195,7 +198,8 @@ body, header {
     color: $blue;
 }
 .open-close-menu {
-    margin: 0 3rem;
+    box-sizing: content-box;
+    margin: 1rem 3rem;
     width: 4rem;
 }
 

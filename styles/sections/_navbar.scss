@@ -6,7 +6,7 @@ header {
     background-color: $dark-blue;
     color: white;
     z-index: 2;
-    transition: all 0.6s;
+    transition: all 0.4s;
     nav {
         display: flex;
         justify-content: space-between;
@@ -14,9 +14,25 @@ header {
         height: 100%;
     }
     .desplegable {
-        @include hidden;
+        position: absolute;
+        margin-top: 2rem;
+        background-color: $white;
+        a {
+            color: $dark-blue;
+            padding: 1rem 2rem;
+            transition: all 0.4s;
+            display: block;
+            &:hover {
+                background-color: $alternate-light-blue;
+            }
+        }
     }
-    
+}
+#organizacion:hover > .desplegable {
+    display: block;
+}
+#programa:hover > .desplegable {
+    display: block;
 }
 .links {
     display: flex;
@@ -24,25 +40,12 @@ header {
         list-style: none;
         font-size: 2rem;
         padding: 1.8rem;
-        a {
+        .link-a {
             color: $white;
             transition: all 0.2s;
             &:hover {
                 color: $alternate-light-blue;
             }
         }
-    }
-}
-
-//Mobile 
-@media (min-width: 768px) and (max-width: 1024px) {
-    header {
-        img {
-            padding: 0 1rem;
-        }
-    }
-    .links li {
-        font-size: 1.5rem;
-        padding: 1.2rem;
     }
 }

@@ -1,13 +1,8 @@
-////////////////////////////////Media Queries
-@media (min-width: 768px) {
-    .banner-mobile {
-        @include hidden;
-    }
-    .open-close-menu {
-        @include hidden;
-    }
-}
+////////////////////////////////Mobile
 @media (max-width: 768px) {
+    header {
+        margin-top: 0;
+    }
     .banner {
         @include hidden;
     }
@@ -23,5 +18,34 @@
             font-size: 3rem;
             margin: 1rem 2rem;
         }
+    }
+    .links {
+        background-color: $dark-blue;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+////////////////////////////////Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        img {
+            padding: 0 1rem;
+        }
+    }
+    .links li {
+        font-size: 1.5rem;
+        padding: 1.2rem;
+    }
+}    
+////////////////////////////////Desktop
+@media (min-width: 768px) {
+    .banner-mobile {
+        @include hidden;
+    }
+    .open-close-menu {
+        @include hidden;
     }
 }
