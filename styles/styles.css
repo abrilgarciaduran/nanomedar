@@ -51,6 +51,9 @@ body, header {
 .side-margins {
   padding: 0 15rem; }
 
+.side-sm-margins {
+  padding: 0 8rem; }
+
 .bottom-margins {
   padding-bottom: 7rem; }
 
@@ -77,18 +80,20 @@ body, header {
 .banner-mobile {
   margin: auto; }
 
-.live img {
-  width: 100px; }
-.live h2 {
-  font-size: 2rem;
-  text-align: center; }
-.live .flex-column {
-  display: flex;
-  transition: all 0.4s; }
-  .live .flex-column:hover {
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.63); }
-.live .blue-button {
-  background-color: #6181c4; }
+.live {
+  margin-top: 2rem; }
+  .live img {
+    width: 100px; }
+  .live h2 {
+    font-size: 2.5rem;
+    text-align: center; }
+  .live .flex-column {
+    display: flex;
+    transition: all 0.4s; }
+    .live .flex-column:hover {
+      box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.63); }
+  .live .blue-button {
+    background-color: #6181c4; }
 
 .float-left {
   display: block;
@@ -108,6 +113,9 @@ body, header {
 
 .dark-blue {
   color: #004aad; }
+
+.black {
+  color: #000; }
 
 .img-icon {
   width: 4rem;
@@ -151,6 +159,9 @@ body, header {
 .bold600 {
   font-weight: 600; }
 
+.italic {
+  font-style: italic; }
+
 .blue {
   color: #6181c4; }
 
@@ -159,11 +170,34 @@ body, header {
   margin: 1rem 3rem;
   width: 4rem; }
 
-.live {
-  display: none; }
+.day {
+  display: inline-block;
+  min-width: 380px;
+  max-width: 460px; }
 
-.cronograma-section {
-  display: none; }
+table {
+  border: 1px solid black;
+  margin: 2rem; }
+
+td {
+  font-size: 1.5rem;
+  padding: 0.7rem; }
+
+.tr-large {
+  height: 8rem; }
+
+.alternate-light-blue {
+  background-color: #6fbcbf; }
+
+.white-blue {
+  background-color: #afbedb; }
+
+.tr-borders {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.grey {
+  background-color: #999999; }
 
 header {
   position: fixed;
@@ -356,8 +390,14 @@ footer {
   .banner-mobile {
     display: block; }
 
-  .side-margins {
-    padding: 0 4rem; }
+  .side-sm-margins {
+    padding: 0 2.5rem; }
+
+  .side-margins-mobile {
+    padding: 0 2.5rem; }
+
+  .bottom-margins-mobile {
+    padding-bottom: 4rem; }
 
   .text-content h2 {
     width: 240px;
@@ -379,7 +419,14 @@ footer {
     flex-wrap: wrap; }
 
   .items-submenu {
-    width: 35%; } }
+    width: 35%; }
+
+  .day {
+    display: inline-block;
+    min-width: 300px; }
+
+  .time {
+    margin: 0.7rem 2rem; } }
 @media (min-width: 768px) and (max-width: 1024px) {
   header img {
     padding: 0 1rem; }
@@ -392,6 +439,9 @@ footer {
     display: none; }
 
   .open-close-menu {
-    display: none; } }
+    display: none; }
+
+  .time {
+    padding: 0.7rem 8rem; } }
 
 /*# sourceMappingURL=styles.css.map */

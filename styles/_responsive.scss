@@ -9,8 +9,14 @@
     .banner-mobile {
         display: block;
     }
-    .side-margins {
-        padding: 0 4rem;
+    .side-sm-margins {
+        padding: 0 2.5rem;
+    }
+    .side-margins-mobile {
+        padding: 0 2.5rem;
+    }
+    .bottom-margins-mobile {
+        padding-bottom: 4rem;
     }
     .text-content {
         h2 {
@@ -36,6 +42,13 @@
     .items-submenu {
         width: 35%;
     }
+    .day {
+        display: inline-block;
+        min-width: 300px;
+    }
+    .time {
+        margin: 0.7rem 2rem;
+    }
 }
 
 ////////////////////////////////Tablet
@@ -57,5 +70,8 @@
     }
     .open-close-menu {
         @include hidden;
+    }
+    .time {
+        padding: 0.7rem 8rem;
     }
 }

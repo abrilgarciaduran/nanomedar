@@ -79,6 +79,9 @@ body, header {
 .side-margins {
     padding: 0 15rem;
 }
+.side-sm-margins {
+    padding: 0 8rem;
+}
 .bottom-margins {
     padding-bottom: 7rem;
 }
@@ -107,11 +110,12 @@ body, header {
     margin: auto;
 }
 .live {
+    margin-top: 2rem;
     img {
         width: 100px;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     .flex-column {
@@ -143,6 +147,9 @@ body, header {
 }
 .dark-blue {
     color: $dark-blue;
+}
+.black {
+    color: #000;
 }
 .img-icon {
     width: 4rem;
@@ -194,6 +201,9 @@ body, header {
 .bold600 {
     font-weight: 600;
 }
+.italic {
+    font-style: italic;
+}
 .blue {
     color: $blue;
 }
@@ -202,11 +212,34 @@ body, header {
     margin: 1rem 3rem;
     width: 4rem;
 }
-
-////////////////////////////////Hidden
-.live {
-    @include hidden;
+.day {
+    display: inline-block;
+    min-width: 380px;
+    max-width: 460px;
 }
-.cronograma-section {
-    @include hidden;
+
+//Table
+table {
+    border: 1px solid black;
+    margin: 2rem;
+}
+td {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+}
+.tr-large {
+    height: 8rem;
+}
+.alternate-light-blue {
+    background-color: $alternate-light-blue;
+}
+.white-blue {
+    background-color: $white-blue;
+}
+.tr-borders {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.grey {
+    background-color: #999999;
 }
